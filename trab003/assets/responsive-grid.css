@@ -54,15 +54,16 @@ main .Galeria>div {
   height: 106px;
 }
 
-main div.galeria:first-child {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
 main img {
   height: 104px;
   width: 104px;
   object-fit: cover;
+}
+
+main div.galeria:first-child{
+ /* grid-row: 2span;
+  grid-column: 2span;*/
+  grid-area: span 2 / span 2;
 }
 
 @media screen and (max-width: 500px) {
