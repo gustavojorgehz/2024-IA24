@@ -58,11 +58,14 @@ main .Galeria>div {
 }
 
 main img {
-
   height: 104px;
   width: 104px;
   object-fit: cover;
+}
 
+main div.galeria:first-child{
+  grid-row: 2span;
+  grid-column: 2span;
 }
 
 
