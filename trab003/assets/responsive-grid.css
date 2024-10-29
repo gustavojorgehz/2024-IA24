@@ -64,8 +64,9 @@ main img {
 }
 
 main div.galeria:first-child{
-  grid-row: 2span;
-  grid-column: 2span;
+ /* grid-row: 2span;
+  grid-column: 2span;*/
+  grid-area: span 2 / span 2;
 }
 
 
