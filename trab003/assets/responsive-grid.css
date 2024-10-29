@@ -4,7 +4,7 @@ header {
 
 aside {
   grid-area: aside;
-  transform:translate(-12vw);
+  /*transform:translate(-12vw);*/
   transition: .5s;
   cursor:pointer;
   text-align: center;
@@ -51,22 +51,19 @@ main .Galeria {
 
 main .Galeria>div {
   border:none;
-  min-height: 106px;
-  max-height: 106px;
-  min-width: 106;
-  max-width: 106;
+  height: 106px;
+}
+
+main div.galeria:first-child {
+  grid-row: span 2;
+  grid-column: span 2;
 }
 
 main img {
-
   height: 104px;
   width: 104px;
   object-fit: cover;
-
 }
-
-
-
 
 @media screen and (max-width: 500px) {
   body {

@@ -16,8 +16,22 @@ body {
 header {
   min-width: 100px;
   min-height: 100px;
-  background-color: #243642;
+  background-color:#243642;
+  text-align: center;
+}
 
+header h1#title {
+  display: inline-block;/*não sei o porquê precisa disso, mas sem isso a página inteira começa a mudar*/
+  animation: inflar 3s infinite;
+}
+
+@keyframes inflar {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 aside {
@@ -31,12 +45,10 @@ main {
   min-height: 100px;
   background-color: #629584;
   padding: 1rem;
-
 }
 
 footer {
   min-width: 100px;
   min-height: 100px;
   background-color: #629584;
-
 }
