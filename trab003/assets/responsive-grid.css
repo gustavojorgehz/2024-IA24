@@ -62,7 +62,7 @@ main .gallery {
 }
 
 main :first-child{
-   grid-area: span 2 / span 2; 
+  grid-area: span 2 / span 2; 
 
 }
 .gallery-image-modal {

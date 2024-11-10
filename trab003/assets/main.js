@@ -22,6 +22,15 @@ galleryBtNext.addEventListener('click', () => {
   nextImg.click()
 })
 
+const galleryBtPrev = galleryImageModal.querySelector('.bt-prev')
+let prevImg = null
+
+galleryBtPrev.addEventListener('click', () => {
+  galleryImageModal.close()
+  prevImg.click()
+})
+
+
 galleryBtClose.addEventListener('click', () => {
   galleryImageModal.close()
 })
@@ -33,3 +42,11 @@ imgs.forEach(img => {
     galleryImageModal.showModal()
   })
 })
+
+imgs.forEach(img => {
+    img.addEventListener('click', () => {
+      prevImg = img.parentNode.previousElementSibling.querySelector('img')
+      galleryContent.innerHTML = `<img src="${img.src}">`
+      galleryImageModal.showModal()
+    })
+  })
